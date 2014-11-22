@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+
+    <title></title>
+    <link href="Content/ng-grid.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-resource.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/ng-grid.min.js"></script>
+    <script src="Scripts/app/app.js"></script>
+    <script src="Scripts/app/Services/contactService.js"></script>
+    <script src="Scripts/app/Controller/gridController.js"></script>
+</head>
+<body ng-controller="gridController">
+    <div style="border: 1px solid rgb(212,212,212);width: auto;height: 500px;" ng-grid="gridOptions"></div>
+
+    <div style=" float: left;">{{mySelections}}</div>
+</body>
+</html>
